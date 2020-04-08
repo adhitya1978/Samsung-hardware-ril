@@ -11,7 +11,6 @@
  ----------------------------
  ..\ndk-build.cmd APP_BUILD_SCRIPT=..\rild\Android.mk APP_ABI=arm64-v8a NDK_ALL_ABIS=arm64-v8a APP_PLATFORM=android-19 NDK_PROJECT_PATH=..\rild
  
-  ## INSTALL ON DEVICE
+  ## INSTALL ON DEVICE & SET PERMISSION
   ----------------------------
-  "Set permission"
   set_metadata("/system/vendor/bin/hw/rild","uid",0,"gid",2000,"mode",0755,"capabilities",0x0,"selabel","u:object_r:rild_exec:s0");
